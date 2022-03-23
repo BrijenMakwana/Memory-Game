@@ -71,7 +71,10 @@ const grid = document.querySelector("#grid");
 function createBoard() {
   for (let i = 0; i < cardArray.length; i++) {
     const card = document.createElement("img");
-    card.setAttribute("src", "images/blank.png");
+    card.setAttribute(
+      "src",
+      "https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png"
+    );
     card.setAttribute("data-id", i);
     card.addEventListener("click", flipCard);
     grid.appendChild(card);
@@ -86,8 +89,14 @@ function checkMatch() {
 
   if (cardChosenIds[0] === cardChosenIds[1]) {
     alert("you clicked the same image");
-    cards[cardChosenIds[0]].setAttribute("src", "images/blank.png");
-    cards[cardChosenIds[1]].setAttribute("src", "images/blank.png");
+    cards[cardChosenIds[0]].setAttribute(
+      "src",
+      "https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png"
+    );
+    cards[cardChosenIds[1]].setAttribute(
+      "src",
+      "https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png"
+    );
   } else if (cardsChosen[0] === cardsChosen[1]) {
     // alert("you found a match");
     cards[cardChosenIds[0]].setAttribute("src", "images/white.png");
@@ -95,8 +104,14 @@ function checkMatch() {
     cards[cardChosenIds[0]].removeEventListener("click", flipCard);
     cards[cardChosenIds[1]].removeEventListener("click", flipCard);
   } else {
-    cards[cardChosenIds[0]].setAttribute("src", "images/blank.png");
-    cards[cardChosenIds[1]].setAttribute("src", "images/blank.png");
+    cards[cardChosenIds[0]].setAttribute(
+      "src",
+      "https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png"
+    );
+    cards[cardChosenIds[1]].setAttribute(
+      "src",
+      "https://cdn.pixabay.com/photo/2016/10/18/18/19/question-mark-1750942_960_720.png"
+    );
   }
   cardsChosen = [];
   cardChosenIds = [];

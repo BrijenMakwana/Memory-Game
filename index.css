@@ -1,6 +1,25 @@
 #grid{
-    width: 400px;
-    height: 300px;
+    width: 800px;
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
 }
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+@media screen and (max-width: 480px) {
+    #grid{
+        width: 320px;
+        height: 240px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    img{
+        height: 80px;
+        width: 80px;
+    }
+} 

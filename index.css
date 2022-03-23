@@ -1,3 +1,12 @@
+h1{
+    text-align: center;
+}
+
+div{
+    margin: auto;
+    
+}
+
 #grid{
     width: 800px;
     height: 600px;
@@ -9,6 +18,7 @@ img{
     height: 200px;
     width: 200px;
 }
+
 
 @media screen and (max-width: 480px) {
     #grid{
